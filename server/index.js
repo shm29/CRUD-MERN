@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const employee = require("./routes/route");
+const route = require("./routes/route");
 
 const app = express();
 app.use(bodyParser.json());
