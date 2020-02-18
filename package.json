@@ -1,0 +1,19 @@
+{
+  "name": "crud-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd server && node index",
+    "client-install": "cd client && npm install",
+    "server-install": "cd server && npm install",
+    "install-all": "concurrently \"npm run client-install\" \"npm run server-install\"",
+    "client": "cd client && npm run start",
+    "server": "cd server && nodemon index --ignore client/",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "Artur Sholomko",
+  "license": "MIT",
+  "dependencies": {}
+}
